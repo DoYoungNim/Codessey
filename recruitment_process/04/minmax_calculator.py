@@ -1,8 +1,4 @@
 def find_min_max(numbers):
-    """
-    숫자 리스트에서 최소값과 최대값을 찾는 함수
-    Python 내장 함수 min(), max() 사용 금지
-    """
     if not numbers:
         return None, None
     
