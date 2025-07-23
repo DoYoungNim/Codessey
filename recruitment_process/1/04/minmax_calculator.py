@@ -30,6 +30,7 @@ def main():
                 num = float(part)
                 numbers.append(num)
             except ValueError:
+                raise ValueError("Invalid input.")
                 print("Invalid input.")
                 return
         
@@ -44,7 +45,7 @@ def main():
         # 결과 출력
         print(f"Min: {minimum}, Max: {maximum}")
         
-    except Exception:
+    except Exception as e:
         print("Invalid input.")
 
 if __name__ == "__main__":
